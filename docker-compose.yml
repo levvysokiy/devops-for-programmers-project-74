@@ -9,7 +9,7 @@ services:
       - db
 
   db:
-    image: postgres:latest
+    image: postgres:12.20-alpine3.20
     restart: always
     environment:
       - POSTGRES_DB=${DATABASE_NAME}
